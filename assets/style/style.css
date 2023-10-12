@@ -1,6 +1,131 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Footer */
+footer {
+    text-align: end;
+    padding: 0.75rem;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+footer .button {
+    background-color: rgb(74, 74, 74);
+    color: white;
+    padding: 4px 7px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer .view-mode {
+    margin-right: 0.25rem;
+}
+
+/* Main */
+main {
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+main .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .wrapper .card {
+    background-image: url("../img/montain.jpg");
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 0 0.5rem 1rem 0;
+}
+
+main .wrapper .card .card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px;
+}
+
+
+/* Header */
+header {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding-left: 1rem;
+}
+
+header .wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-video-button-wrapper,
+.room-button-wrapper {
+    display: flex;
+}
+
+.header-button {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header-icon {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.button-options {
+    height: 100%;
+    padding: 1rem 1rem 1rem 0;
+}
+
+i.fa-share-from-square {
+    color: rgb(75, 200, 0);
+}
+
+i.fa-user-plus {
+    padding-left: 7px;
+}
+
+/* End Button */
+header .wrapper .end-button-wrapper {
+    height: 100%;
+
+}
+
+.end-button {
+    background-color: rgb(74, 74, 74);
+    display: inline-block;
+    height: 100%;
+    color: red;
+    text-align: center;
+    line-height: 80px;
+    width: 120px;
 }
