@@ -1,2 +1,2 @@
-# html-css-zoom
-scusate per le poche commit, il codice mi ha preso troppo...
+# Content
+Una semplice **Web App** che si ispira alla piattaforma **Zoom**
